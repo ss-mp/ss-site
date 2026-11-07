@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- Static one-page site for selfsounds.net. Edit at will; zero third-party assets by policy (system fonts, inline CSS, no analytics, no CDNs). -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gui Afonso — Audio Engineer &amp; Producer</title>
+<meta name="description" content="Mixing, mastering and sound design. Remote, from São Paulo.">
+<style>
+  :root{
+    --ink:#111;
+    --muted:#666;
+    --line:#e2e2e2;
+    --bg:#fdfdfc;
+    --accent:#111;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:660px;margin:0 auto;padding:56px 24px 72px}
+  header{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:36px}
+  h1{
+    font-size:30px;line-height:1.15;margin:0 0 10px;
+    letter-spacing:-0.02em;font-weight:600;
+  }
+  .role{
+    font-size:13px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:0 0 18px;font-weight:500;
+  }
+  .lede{margin:0;color:#333;max-width:52ch}
+  h2{
+    font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;margin:0 0 14px;
+  }
+  section{margin-bottom:40px}
+  ul.credits{list-style:none;margin:0;padding:0}
+  ul.credits li{
+    padding:12px 0;border-bottom:1px solid var(--line);margin:0;
+  }
+  ul.credits li:last-child{border-bottom:0}
+  ul.credits strong{font-weight:600}
+  ul.credits span{display:block;color:var(--muted);font-size:15px;margin-top:2px}
+  ul.credits a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
+  ul.credits a:hover{border-bottom-color:var(--ink)}
+  ul.services{list-style:none;margin:0;padding:0}
+  ul.services li{
+    display:flex;justify-content:space-between;gap:18px;
+    padding:11px 0;border-bottom:1px solid var(--line);
+  }
+  ul.services li:last-child{border-bottom:0}
+  ul.services .price{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--ink)}
+  ul.services .note{color:var(--muted);font-size:15px}
+  ol.how{margin:0;padding-left:20px}
+  ol.how li{padding:5px 0}
+  .sample p{margin:0 0 14px;color:var(--muted);font-size:15px}
+  .sample audio{width:100%;display:block}
+  footer{border-top:1px solid var(--line);padding-top:24px;font-size:15px}
+  footer a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--muted)}
+  footer .row{margin:0 0 6px}
+  .fine{color:var(--muted);font-size:13px;margin-top:18px}
+  @media (max-width:480px){
+    .wrap{padding:40px 20px 56px}
+    h1{font-size:26px}
+    ul.services li{flex-wrap:wrap;gap:2px}
+    ul.services .price{width:100%}
+  }
+  @media print{
+    body{background:#fff}
+    .wrap{max-width:none;padding:0}
+    a{color:#000}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Gui Afonso</h1>
+    <p class="role">Audio Engineer &amp; Producer — Mixing · Mastering · Sound Design</p>
+    <p class="lede">
+      Fifteen years recording, mixing and producing music in São Paulo. I work
+      remotely with artists and labels: you send the stems, I send back a
+      finished mix with clear notes and documented revisions.
+    </p>
+  </header>
+
+  <section>
+    <h2>Selected credits</h2>
+    <ul class="credits">
+      <li>
+        <strong><a href="https://www.youtube.com/playlist?list=PLHFdWT1smnbtOCl9GxKqbolItoR71GmKV" target="_blank" rel="noopener">Rolling Stone Brasil — 10 “Unplugged” sessions</a></strong>
+        <span>Technical direction, recording, mixing and mastering — watch on YouTube</span>
+      </li>
+      <li>
+        <strong><a href="https://open.spotify.com/track/6yrM9OvvSDrkZRkxDyzNnx" target="_blank" rel="noopener">“Casual Calling” — Doce Violeta (2021)</a></strong>
+        <span>Production and mix — listen on Spotify</span>
+      </li>
+      <li>
+        <strong><a href="https://open.spotify.com/album/5zcpTI3sjE7ngBOtRz4Hk1" target="_blank" rel="noopener">“Encontro de Compositores” (2023)</a></strong>
+        <span>Released on Selfsounds Produções — production, recording, mixing and mastering</span>
+      </li>
+      <li>
+        <strong><a href="https://www.youtube.com/watch?v=0zS_-6GHKuw" target="_blank" rel="noopener">Cat Idle — original score (Studio Caudas)</a></strong>
+        <span>Three tracks composed and delivered for the game — teaser on YouTube</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="sample">
+    <h2>Listen</h2>
+    <p>Cat Idle — “Main Theme”. Excerpt, 45 seconds.</p>
+    <audio controls preload="metadata" src="cat-idle-theme.mp3"></audio>
+  </section>
+
+  <section>
+    <h2>Services</h2>
+    <ul class="services">
+      <li><span>Mix — up to 24 tracks <span class="note">/ per song</span></span><span class="price">on request</span></li>
+      <li><span>Master <span class="note">/ per song</span></span><span class="price">on request</span></li>
+      <li><span>Mix + master <span class="note">/ per song</span></span><span class="price">on request</span></li>
+      <li><span>Sound design / audio treatment</span><span class="price">on request</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <ol class="how">
+      <li>You send 24-bit WAV stems, dry, with no master bus processing.</li>
+      <li>First mix version in 5 business days; mastering per song in 2 business days.</li>
+      <li>Three revision rounds included.</li>
+    </ol>
+  </section>
+
+  <!-- ===== EDIT ONLY THIS BLOCK ===== -->
+  <footer>
+    <p class="row">E-mail — <a href="mailto:guiafonso@selfsounds.net">guiafonso@selfsounds.net</a></p>
+    <p class="row">Selfsounds Produções — São Paulo, Brazil</p>
+    <p class="fine">Payment via wire transfer or Wise. Files delivered by WeTransfer or Dropbox.</p>
+  </footer>
+  <!-- ===== END EDIT BLOCK ===== -->
+
+</div>
+</body>
+</html>
+

@@ -56,6 +56,10 @@
     padding:11px 0;border-bottom:1px solid var(--line);
   }
   ul.services li:last-child{border-bottom:0}
+  table.prices{width:100%;border-collapse:collapse;max-width:52ch}
+  table.prices td{padding:9px 8px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+  table.prices tr:last-child td{border-bottom:0}
+  table.prices .note{color:var(--muted);font-size:14px;margin-left:6px}
   ul.services .price{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--ink)}
   ul.services .note{color:var(--muted);font-size:15px}
   ol.how{margin:0;padding-left:20px}
@@ -122,12 +126,17 @@
 
   <section>
     <h2>Services</h2>
-    <ul class="services">
-      <li><span>Mix — up to 24 tracks <span class="note">/ per song</span></span><span class="price">on request</span></li>
-      <li><span>Master <span class="note">/ per song</span></span><span class="price">on request</span></li>
-      <li><span>Mix + master <span class="note">/ per song</span></span><span class="price">on request</span></li>
-      <li><span>Sound design / audio treatment</span><span class="price">on request</span></li>
-    </ul>
+    <table class="prices">
+      <tr><td>Mix — up to 24 tracks <span class="note">/ per song</span></td><td>US$ 100</td><td>R$ 250</td></tr>
+      <tr><td>Master <span class="note">/ per song</span></td><td>US$ 40</td><td>R$ 100</td></tr>
+      <tr><td>Mix + master <span class="note">/ per song</span></td><td>US$ 120</td><td>R$ 320</td></tr>
+      <tr><td>EP — up to 5 songs <span class="note">mix</span></td><td>US$ 450</td><td>R$ 1.100</td></tr>
+      <tr><td>EP — up to 5 songs <span class="note">mix + master</span></td><td>US$ 550</td><td>R$ 1.450</td></tr>
+      <tr><td>Album — up to 10 songs <span class="note">mix</span></td><td>US$ 900</td><td>R$ 2.350</td></tr>
+      <tr><td>Album — up to 10 songs <span class="note">mix + master</span></td><td>US$ 1.100</td><td>R$ 3.150</td></tr>
+      <tr><td>Sound design / audio treatment</td><td colspan="2">on request</td></tr>
+    </table>
+    <p class="fine">Founding rate: 30% off for the first three clients.</p>
   </section>
 
   <section>

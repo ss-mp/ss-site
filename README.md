@@ -9,3 +9,5 @@ Standing rules for anyone touching this repo:
 - **Zero third-party assets** — system fonts, inline CSS, no analytics, no CDNs, no embeds.
 
 Contact: `guiafonso@selfsounds.net`
+
+Commit author/committer email is always the account noreply address (as enforced by GitHub email privacy).

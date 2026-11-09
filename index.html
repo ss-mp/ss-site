@@ -4,8 +4,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gui Afonso — Audio Engineer &amp; Producer</title>
-<meta name="description" content="Mixing, mastering and sound design. Remote, from São Paulo.">
+<title data-pt="Gui Afonso — Engenheiro de Áudio &amp; Produtor" data-en="Gui Afonso — Audio Engineer &amp;amp; Producer">Gui Afonso — Audio Engineer &amp; Producer</title>
+<meta name="description" content="Mixing, mastering and sound design. Remote, from São Paulo." data-pt="Mixagem, masterização e design sonoro. Remoto, de São Paulo." data-content>
 <link rel="icon" type="image/png" sizes="512x512" href="logo.png">
 <style>
   :root{
@@ -31,6 +31,14 @@
   .brand .mark{width:112px;height:112px;flex:none;display:block}
   @media(max-width:480px){.brand{flex-direction:column;align-items:flex-start;gap:14px}}
   header{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:36px}
+  .langswitch{
+    position:absolute;top:0;right:0;
+    font:500 12px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    letter-spacing:.08em;color:var(--muted);background:none;
+    border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer;
+  }
+  .langswitch:hover{border-color:var(--muted);color:var(--ink)}
+  header{position:relative}
   h1{
     font-size:30px;line-height:1.15;margin:0 0 10px;
     letter-spacing:-0.02em;font-weight:600;
@@ -95,14 +103,19 @@
 <div class="wrap">
 
   <header>
+    <button class="langswitch" id="langbtn" type="button" aria-label="Mudar para português">PT</button>
     <div class="brand">
       <img class="mark" src="logo.png" alt="Selfsounds monogram — a gramophone whose playing surface is a small brain, drawn as the letter S.">
       <div>
         <h1>Gui Afonso</h1>
-        <p class="role" style="margin:0 0 4px">Audio Engineer &amp; Producer — Mixing · Mastering · Sound Design</p>
+        <p class="role" style="margin:0 0 4px" data-pt="Engenheiro de Áudio &amp; Produtor — Mixagem · Masterização · Design Sonoro" data-en="Audio Engineer &amp;amp; Producer — Mixing · Mastering · Sound Design">Audio Engineer &amp; Producer — Mixing · Mastering · Sound Design</p>
       </div>
     </div>
-    <p class="lede">
+    <p class="lede" data-pt="Quinze anos gravando, mixando e produzindo música em São Paulo. Trabalho remotamente com artistas e selos: você envia os stems, eu devolvo um mix pronto, com notas claras e revisões documentadas." data-en="
+      Fifteen years recording, mixing and producing music in São Paulo. I work
+      remotely with artists and labels: you send the stems, I send back a
+      finished mix with clear notes and documented revisions.
+    ">
       Fifteen years recording, mixing and producing music in São Paulo. I work
       remotely with artists and labels: you send the stems, I send back a
       finished mix with clear notes and documented revisions.
@@ -110,78 +123,102 @@
   </header>
 
   <section>
-    <h2>Selected credits</h2>
+    <h2 data-pt="Créditos selecionados" data-en="Selected credits">Selected credits</h2>
     <ul class="credits">
       <li>
         <img class="credmark wide" src="rs-logo.png" alt="Rolling Stone Brasil logo">
         <div class="cred-body">
         <strong><a href="https://www.youtube.com/playlist?list=PLHFdWT1smnbtOCl9GxKqbolItoR71GmKV" target="_blank" rel="noopener">Rolling Stone Brasil — 10 “Unplugged” sessions</a></strong>
-        <span>Technical direction, recording, mixing and mastering — watch on YouTube</span>
+        <span data-pt="Direção técnica, gravação, mixagem e masterização — assista no YouTube" data-en="Technical direction, recording, mixing and mastering — watch on YouTube">Technical direction, recording, mixing and mastering — watch on YouTube</span>
         </div>
       </li>
       <li>
         <img class="credmark" src="cc-cover.png" alt="Casual Calling — Doce Violeta cover art">
         <div class="cred-body">
         <strong><a href="https://open.spotify.com/track/6yrM9OvvSDrkZRkxDyzNnx" target="_blank" rel="noopener">“Casual Calling” — Doce Violeta (2021)</a></strong>
-        <span>Production and mix — listen on Spotify</span>
+        <span data-pt="Produção e mix — ouça no Spotify" data-en="Production and mix — listen on Spotify">Production and mix — listen on Spotify</span>
         </div>
       </li>
       <li>
         <img class="credmark" src="encontro-cover.png" alt="Encontro de Compositores cover art">
         <div class="cred-body">
         <strong><a href="https://open.spotify.com/album/5zcpTI3sjE7ngBOtRz4Hk1" target="_blank" rel="noopener">“Encontro de Compositores” (2023)</a></strong>
-        <span>Released on Selfsounds Produções — production, recording, mixing and mastering</span>
+        <span data-pt="Lançamento pelo selo Selfsounds Produções — produção, gravação, mixagem e masterização" data-en="Released on Selfsounds Produções — production, recording, mixing and mastering">Released on Selfsounds Produções — production, recording, mixing and mastering</span>
         </div>
       </li>
       <li>
         <img class="credmark" src="caudas-logo.png" alt="Studio Caudas logo">
         <div class="cred-body">
-        <strong><a href="https://www.youtube.com/watch?v=0zS_-6GHKuw" target="_blank" rel="noopener">Cat Idle — original score (Studio Caudas)</a></strong>
-        <span>Three tracks composed and delivered for the game — teaser on YouTube</span>
+        <strong><a href="https://www.youtube.com/watch?v=0zS_-6GHKuw" target="_blank" rel="noopener" data-pt="Cat Idle — trilha original (Studio Caudas)" data-en="Cat Idle — original score (Studio Caudas)">Cat Idle — original score (Studio Caudas)</a></strong>
+        <span data-pt="Três faixas compostas e entregues para o jogo — teaser no YouTube" data-en="Three tracks composed and delivered for the game — teaser on YouTube">Three tracks composed and delivered for the game — teaser on YouTube</span>
         </div>
       </li>
     </ul>
   </section>
 
   <section class="sample">
-    <h2>Listen</h2>
-    <p>Cat Idle — “Main Theme”. Excerpt, 45 seconds.</p>
+    <h2 data-pt="Ouça" data-en="Listen">Listen</h2>
+    <p data-pt="Cat Idle — “Main Theme”. Trecho, 45 segundos." data-en="Cat Idle — “Main Theme”. Excerpt, 45 seconds.">Cat Idle — “Main Theme”. Excerpt, 45 seconds.</p>
     <audio controls preload="metadata" src="cat-idle-theme.mp3"></audio>
   </section>
 
   <section>
-    <h2>Services</h2>
+    <h2 data-pt="Serviços" data-en="Services">Services</h2>
     <table class="prices">
-      <tr><td>Mix — up to 24 tracks <span class="note">/ per song</span></td><td>US$ 100</td><td>R$ 250</td></tr>
-      <tr><td>Master <span class="note">/ per song</span></td><td>US$ 40</td><td>R$ 100</td></tr>
-      <tr><td>Mix + master <span class="note">/ per song</span></td><td>US$ 120</td><td>R$ 320</td></tr>
-      <tr><td>EP — up to 5 songs <span class="note">mix</span></td><td>US$ 450</td><td>R$ 1.100</td></tr>
-      <tr><td>EP — up to 5 songs <span class="note">mix + master</span></td><td>US$ 550</td><td>R$ 1.450</td></tr>
-      <tr><td>Album — up to 10 songs <span class="note">mix</span></td><td>US$ 900</td><td>R$ 2.350</td></tr>
-      <tr><td>Album — up to 10 songs <span class="note">mix + master</span></td><td>US$ 1.100</td><td>R$ 3.150</td></tr>
-      <tr><td>Sound design / audio treatment</td><td colspan="2">on request</td></tr>
+      <tr data-html data-en="&lt;td&gt;Mix — up to 24 tracks &lt;span class=&quot;note&quot;&gt;/ per song&lt;/span&gt;" data-pt="Mix — até 24 faixas &lt;span class=&quot;note&quot;&gt;/ por música&lt;/span&gt;"><td>Mix — up to 24 tracks <span class="note">/ per song</span></td><td>US$ 100</td><td>R$ 250</td></tr>
+      <tr data-html data-en="&lt;td&gt;Master &lt;span class=&quot;note&quot;&gt;/ per song&lt;/span&gt;" data-pt="Master &lt;span class=&quot;note&quot;&gt;/ por música&lt;/span&gt;"><td>Master <span class="note">/ per song</span></td><td>US$ 40</td><td>R$ 100</td></tr>
+      <tr data-html data-en="&lt;td&gt;Mix + master &lt;span class=&quot;note&quot;&gt;/ per song&lt;/span&gt;" data-pt="Mix + master &lt;span class=&quot;note&quot;&gt;/ por música&lt;/span&gt;"><td>Mix + master <span class="note">/ per song</span></td><td>US$ 120</td><td>R$ 320</td></tr>
+      <tr data-html data-en="&lt;td&gt;EP — up to 5 songs &lt;span class=&quot;note&quot;&gt;mix&lt;/span&gt;" data-pt="EP — até 5 músicas &lt;span class=&quot;note&quot;&gt;mix&lt;/span&gt;"><td>EP — up to 5 songs <span class="note">mix</span></td><td>US$ 450</td><td>R$ 1.100</td></tr>
+      <tr data-html data-en="&lt;td&gt;EP — up to 5 songs &lt;span class=&quot;note&quot;&gt;mix + master&lt;/span&gt;" data-pt="EP — até 5 músicas &lt;span class=&quot;note&quot;&gt;mix + master&lt;/span&gt;"><td>EP — up to 5 songs <span class="note">mix + master</span></td><td>US$ 550</td><td>R$ 1.450</td></tr>
+      <tr data-html data-en="&lt;td&gt;Album — up to 10 songs &lt;span class=&quot;note&quot;&gt;mix&lt;/span&gt;" data-pt="Álbum — até 10 músicas &lt;span class=&quot;note&quot;&gt;mix&lt;/span&gt;"><td>Album — up to 10 songs <span class="note">mix</span></td><td>US$ 900</td><td>R$ 2.350</td></tr>
+      <tr data-html data-en="&lt;td&gt;Album — up to 10 songs &lt;span class=&quot;note&quot;&gt;mix + master&lt;/span&gt;" data-pt="Álbum — até 10 músicas &lt;span class=&quot;note&quot;&gt;mix + master&lt;/span&gt;"><td>Album — up to 10 songs <span class="note">mix + master</span></td><td>US$ 1.100</td><td>R$ 3.150</td></tr>
+      <tr><td>Sound design / audio treatment</td><td colspan="2" data-pt="sob consulta" data-en="on request">on request</td></tr>
     </table>
-    <p class="fine">Founding rate: 30% off for the first three clients.</p>
+    <p class="fine" data-pt="Taxa fundadora: 30% de desconto para os três primeiros clientes." data-en="Founding rate: 30% off for the first three clients.">Founding rate: 30% off for the first three clients.</p>
   </section>
 
   <section>
-    <h2>How it works</h2>
+    <h2 data-pt="Como funciona" data-en="How it works">How it works</h2>
     <ol class="how">
-      <li>You send 24-bit WAV stems, dry, with no master bus processing.</li>
-      <li>First mix version in 5 business days; mastering per song in 2 business days.</li>
-      <li>Three revision rounds included.</li>
+      <li data-pt="Você envia os stems em WAV 24 bits, crus, sem processamento no master bus." data-en="You send 24-bit WAV stems, dry, with no master bus processing.">You send 24-bit WAV stems, dry, with no master bus processing.</li>
+      <li data-pt="Primeira versão do mix em 5 dias úteis; masterização por música em 2 dias úteis." data-en="First mix version in 5 business days; mastering per song in 2 business days.">First mix version in 5 business days; mastering per song in 2 business days.</li>
+      <li data-pt="Três rodadas de revisão inclusas." data-en="Three revision rounds included.">Three revision rounds included.</li>
     </ol>
   </section>
 
   <!-- ===== EDIT ONLY THIS BLOCK ===== -->
   <footer>
     <p class="row">E-mail — <a href="mailto:guiafonso@selfsounds.net">guiafonso@selfsounds.net</a></p>
-    <p class="row">Selfsounds Produções — São Paulo, Brazil</p>
-    <p class="fine">Payment via wire transfer or Wise. Files delivered by WeTransfer or Dropbox.</p>
+    <p class="row" data-pt="Selfsounds Produções — São Paulo, Brasil" data-en="Selfsounds Produções — São Paulo, Brazil">Selfsounds Produções — São Paulo, Brazil</p>
+    <p class="fine" data-pt="Pagamento por transferência bancária ou Wise. Arquivos entregues via WeTransfer ou Dropbox." data-en="Payment via wire transfer or Wise. Files delivered by WeTransfer or Dropbox.">Payment via wire transfer or Wise. Files delivered by WeTransfer or Dropbox.</p>
   </footer>
   <!-- ===== END EDIT BLOCK ===== -->
 
 </div>
+<script>
+  // First-party i18n toggle. No third-party assets, no fonts, no network calls.
+  (function(){
+    var btn=document.getElementById('langbtn');
+    function apply(l){
+      document.documentElement.lang=l;
+      document.querySelectorAll('[data-pt]').forEach(function(el){
+        var v=(l==='pt')?el.getAttribute('data-pt'):el.getAttribute('data-en');
+        if(el.hasAttribute('data-html')){el.innerHTML=v;}
+        else if(el.hasAttribute('data-content')){el.setAttribute('content',v);}
+        else{el.textContent=v;}
+      });
+      btn.textContent=(l==='pt')?'EN':'PT';
+      btn.setAttribute('aria-label',(l==='pt')?'Switch to English':'Mudar para português');
+      try{localStorage.setItem('lang',l);}catch(e){}
+    }
+    btn.addEventListener('click',function(){
+      apply(document.documentElement.lang==='pt'?'en':'pt');
+    });
+    var saved;try{saved=localStorage.getItem('lang');}catch(e){}
+    var nav=(navigator.language||'').toLowerCase().indexOf('pt')===0;
+    apply(saved==='pt'?'pt':(saved==='en'?'en':(nav?'pt':'en')));
+  })();
+</script>
 </body>
 </html>
 
